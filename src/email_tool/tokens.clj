@@ -9,6 +9,7 @@
               ;:crlf-to-test #"[\r\n]+"
               ;;:sig #"(\u2014|--|__|-\\w)|(^Sent from my (\\w+\\s*){1,3})"
               :signature #"^Sent from .+"
+              :reply-metadata #"On[\w \d\n,:<@.>]*wrote:"
               ;;:quote-hdr #"^:etorw.*nO"
               ;;:quote-hdr-to-test #"^On.+wrote:"
               ;;:multi-quote-hdr #"(?!On.*On\\s.+?wrote:)(On\\s(.+?)wrote:)"
